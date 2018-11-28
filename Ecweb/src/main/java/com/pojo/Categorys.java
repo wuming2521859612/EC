@@ -3,19 +3,19 @@ package com.pojo;
 import java.util.Date;
 
 public class Categorys {
-    private int cateid;
+    int cateid;
 
-    private int parentid;
+    int parentid;
 
-    private String catename;
+    String catename;
 
-    private int catestatus;
+    int catestatus;
 
-    private int cateorder;
+    int cateorder;
 
-    private Date catetime;
+    Date catetime;
 
-    private Date catelasttime;
+    Date catelasttime;
 
     public int getCateid() {
         return cateid;
@@ -71,23 +71,6 @@ public class Categorys {
 
     public void setCatelasttime(Date catelasttime) {
         this.catelasttime = catelasttime;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", cateid=").append(cateid);
-        sb.append(", parentid=").append(parentid);
-        sb.append(", catename=").append(catename);
-        sb.append(", catestatus=").append(catestatus);
-        sb.append(", cateorder=").append(cateorder);
-        sb.append(", catetime=").append(catetime);
-        sb.append(", catelasttime=").append(catelasttime);
-        sb.append("]");
-        return sb.toString();
     }
 
 }

@@ -3,29 +3,29 @@ package com.pojo;
 import java.util.Date;
 
 public class Address {
-    private int addid;
+    int addid;
 
-    private int userid;
+    int userid;
 
-    private String addname;
+    String addname;
 
-    private String addphone;
+    String addphone;
 
-    private String addmobile;
+    String addmobile;
 
-    private String addprovince;
+    String addprovince;
 
-    private String addcity;
+    String addcity;
 
-    private String adddistict;
+    String adddistict;
 
-    private String addaddress;
+    String addaddress;
 
-    private String addzip;
+    String addzip;
 
-    private Date addcreatetime;
+    Date addcreatetime;
 
-    private Date addlasttime;
+    Date addlasttime;
 
     public int getAddid() {
         return addid;
@@ -121,28 +121,6 @@ public class Address {
 
     public void setAddlasttime(Date addlasttime) {
         this.addlasttime = addlasttime;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", addid=").append(addid);
-        sb.append(", userid=").append(userid);
-        sb.append(", addname=").append(addname);
-        sb.append(", addphone=").append(addphone);
-        sb.append(", addmobile=").append(addmobile);
-        sb.append(", addprovince=").append(addprovince);
-        sb.append(", addcity=").append(addcity);
-        sb.append(", adddistict=").append(adddistict);
-        sb.append(", addaddress=").append(addaddress);
-        sb.append(", addzip=").append(addzip);
-        sb.append(", addcreatetime=").append(addcreatetime);
-        sb.append(", addlasttime=").append(addlasttime);
-        sb.append("]");
-        return sb.toString();
     }
 
 }

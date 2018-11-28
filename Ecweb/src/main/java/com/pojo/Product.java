@@ -4,27 +4,27 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class Product {
-    private int proid;
+    int proid;
 
-    private int cateid;
+    int cateid;
 
-    private String proname;
+    String proname;
 
-    private String prosubtitle;
+    String prosubtitle;
 
-    private String proimage;
+    String proimage;
 
-    private String prodetail;
+    String prodetail;
 
-    private BigDecimal proprice;
+    BigDecimal proprice;
 
-    private int prostock;
+    int prostock;
 
-    private int prostatus;
+    int prostatus;
 
-    private Date procreatetime;
+    Date procreatetime;
 
-    private Date prolasttime;
+    Date prolasttime;
 
     public int getProid() {
         return proid;
@@ -114,26 +114,4 @@ public class Product {
         this.prolasttime = prolasttime;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", proid=").append(proid);
-        sb.append(", cateid=").append(cateid);
-        sb.append(", proname=").append(proname);
-        sb.append(", prosubtitle=").append(prosubtitle);
-        sb.append(", proimage=").append(proimage);
-        sb.append(", prodetail=").append(prodetail);
-        sb.append(", proprice=").append(proprice);
-        sb.append(", prostock=").append(prostock);
-        sb.append(", prostatus=").append(prostatus);
-        sb.append(", procreatetime=").append(procreatetime);
-        sb.append(", prolasttime=").append(prolasttime);
-        sb.append("]");
-        return sb.toString();
-    }
-
-   
 }

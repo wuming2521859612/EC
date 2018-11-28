@@ -4,33 +4,33 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class Orderinfo {
-    private int orderid;
+    int orderid;
 
-    private String payorder;
+    String payorder;
 
-    private int userid;
+    int userid;
 
-    private int proid;
+    int proid;
 
-    private BigDecimal payment;
+    BigDecimal payment;
 
-    private int paymenttype;
+    int paymenttype;
 
-    private int paypostage;
+    int paypostage;
 
-    private int paystatus;
+    int paystatus;
 
-    private Date paymenttime;
+    Date paymenttime;
 
-    private Date paysendtime;
+    Date paysendtime;
 
-    private Date payendtime;
+    Date payendtime;
 
-    private Date payclosetime;
+    Date payclosetime;
 
-    private Date paycreatetime;
+    Date paycreatetime;
 
-    private Date paylasttime;
+    Date paylasttime;
 
     public int getOrderid() {
         return orderid;
@@ -142,30 +142,6 @@ public class Orderinfo {
 
     public void setPaylasttime(Date paylasttime) {
         this.paylasttime = paylasttime;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", orderid=").append(orderid);
-        sb.append(", payorder=").append(payorder);
-        sb.append(", userid=").append(userid);
-        sb.append(", proid=").append(proid);
-        sb.append(", payment=").append(payment);
-        sb.append(", paymenttype=").append(paymenttype);
-        sb.append(", paypostage=").append(paypostage);
-        sb.append(", paystatus=").append(paystatus);
-        sb.append(", paymenttime=").append(paymenttime);
-        sb.append(", paysendtime=").append(paysendtime);
-        sb.append(", payendtime=").append(payendtime);
-        sb.append(", payclosetime=").append(payclosetime);
-        sb.append(", paycreatetime=").append(paycreatetime);
-        sb.append(", paylasttime=").append(paylasttime);
-        sb.append("]");
-        return sb.toString();
     }
 
 }

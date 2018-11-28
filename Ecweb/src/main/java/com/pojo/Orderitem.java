@@ -4,27 +4,27 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class Orderitem {
-    private int itemid;
+    int itemid;
 
-    private int userid;
+    int userid;
 
-    private String payorder;
+    String payorder;
 
-    private int proid;
+    int proid;
 
-    private String proname;
+    String proname;
 
-    private String proimage;
+    String proimage;
 
-    private BigDecimal payment;
+    BigDecimal payment;
 
-    private int payquantity;
+    int payquantity;
 
-    private BigDecimal paytotalprice;
+    BigDecimal paytotalprice;
 
-    private Date paycreatetime;
+    Date paycreatetime;
 
-    private Date paylasttime;
+    Date paylasttime;
 
     public int getItemid() {
         return itemid;
@@ -114,24 +114,4 @@ public class Orderitem {
         this.paylasttime = paylasttime;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", itemid=").append(itemid);
-        sb.append(", userid=").append(userid);
-        sb.append(", payorder=").append(payorder);
-        sb.append(", proid=").append(proid);
-        sb.append(", proname=").append(proname);
-        sb.append(", proimage=").append(proimage);
-        sb.append(", payment=").append(payment);
-        sb.append(", payquantity=").append(payquantity);
-        sb.append(", paytotalprice=").append(paytotalprice);
-        sb.append(", paycreatetime=").append(paycreatetime);
-        sb.append(", paylasttime=").append(paylasttime);
-        sb.append("]");
-        return sb.toString();
-    }
 }

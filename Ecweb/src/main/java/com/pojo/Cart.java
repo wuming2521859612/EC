@@ -3,17 +3,17 @@ package com.pojo;
 import java.util.Date;
 
 public class Cart {
-    private int cartid;
+    int cartid;
 
-    private int proid;
+    int proid;
 
-    private int cartquantity;
+    int cartquantity;
 
-    private int cartchecked;
+    int cartchecked;
 
-    private Date cartcreatetime;
+    Date cartcreatetime;
 
-    private Date cartlasttime;
+    Date cartlasttime;
 
     public int getCartid() {
         return cartid;
@@ -61,22 +61,6 @@ public class Cart {
 
     public void setCartlasttime(Date cartlasttime) {
         this.cartlasttime = cartlasttime;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", cartid=").append(cartid);
-        sb.append(", proid=").append(proid);
-        sb.append(", cartquantity=").append(cartquantity);
-        sb.append(", cartchecked=").append(cartchecked);
-        sb.append(", cartcreatetime=").append(cartcreatetime);
-        sb.append(", cartlasttime=").append(cartlasttime);
-        sb.append("]");
-        return sb.toString();
     }
 
 }

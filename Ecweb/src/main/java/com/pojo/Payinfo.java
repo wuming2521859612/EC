@@ -3,19 +3,19 @@ package com.pojo;
 import java.util.Date;
 
 public class Payinfo {
-    private int payid;
+    int payid;
 
-    private String payorder;
+    String payorder;
 
-    private int payplatform;
+    int payplatform;
 
-    private String platformnumber;
+    String platformnumber;
 
-    private String platformstatus;
+    String platformstatus;
 
-    private Date paytime;
+    Date paytime;
 
-    private Date paylasttime;
+    Date paylasttime;
 
     public int getPayid() {
         return payid;
@@ -73,22 +73,4 @@ public class Payinfo {
         this.paylasttime = paylasttime;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", payid=").append(payid);
-        sb.append(", payorder=").append(payorder);
-        sb.append(", payplatform=").append(payplatform);
-        sb.append(", platformnumber=").append(platformnumber);
-        sb.append(", platformstatus=").append(platformstatus);
-        sb.append(", paytime=").append(paytime);
-        sb.append(", paylasttime=").append(paylasttime);
-        sb.append("]");
-        return sb.toString();
-    }
-
-    
 }

@@ -3,25 +3,25 @@ package com.pojo;
 import java.util.Date;
 
 public class Userinfo {
-    private int userid;
+    int userid;
 
-    private String username;
+    String username;
 
-    private String userpwd;
+    String userpwd;
 
-    private String useremail;
+    String useremail;
 
-    private String userphone;
+    String userphone;
 
-    private String userquestion;
+    String userquestion;
 
-    private String useranswer;
+    String useranswer;
 
-    private int userrole;
+    int userrole;
 
-    private Date usercreatetime;
+    Date usercreatetime;
 
-    private Date userlasttime;
+    Date userlasttime;
 
     public int getUserid() {
         return userid;
@@ -103,23 +103,4 @@ public class Userinfo {
         this.userlasttime = userlasttime;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", userid=").append(userid);
-        sb.append(", username=").append(username);
-        sb.append(", userpwd=").append(userpwd);
-        sb.append(", useremail=").append(useremail);
-        sb.append(", userphone=").append(userphone);
-        sb.append(", userquestion=").append(userquestion);
-        sb.append(", useranswer=").append(useranswer);
-        sb.append(", userrole=").append(userrole);
-        sb.append(", usercreatetime=").append(usercreatetime);
-        sb.append(", userlasttime=").append(userlasttime);
-        sb.append("]");
-        return sb.toString();
-    }
 }
