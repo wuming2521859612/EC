@@ -262,7 +262,7 @@
 	<div class="Navigation" id="Navigation">
 		 <ul class="Navigation_name">
 			<li><a href="Home.html">首页</a></li>
-			<li><a href="product_list.html">产品列表</a></li>
+			<li><a href="toproduct_list">产品列表</a></li>
 			<li><a href="Limit_buy.html">限时特卖</a><em class="hot_icon"></em></li>
 			<li><a href="#">联系我们</a></li>
 			<li><a href="#">鲜盟人才</a></li>
@@ -1014,7 +1014,7 @@
    <!--右侧菜单栏购物车样式-->
 <div class="fixedBox">
   <ul class="fixedBoxList">
-      <li class="fixeBoxLi user"><a href="User.html"> <span class="fixeBoxSpan iconfont icon-yonghu"></span> <strong>用户</strong></a> </li>
+      <li class="fixeBoxLi user"><a href="toUser"> <span class="fixeBoxSpan iconfont icon-yonghu"></span> <strong>用户</strong></a> </li>
     <li class="fixeBoxLi cart_bd" style="display:block;" id="cartboxs">
 		<p class="good_cart">0</p>
 			<span class="fixeBoxSpan iconfont icon-cart"></span> <strong>购物车</strong>

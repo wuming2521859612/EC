@@ -103,4 +103,11 @@ public class Userinfo {
         this.userlasttime = userlasttime;
     }
 
+	@Override
+	public String toString() {
+		return "Userinfo [userid=" + userid + ", username=" + username + ", userpwd=" + userpwd + ", useremail="
+				+ useremail + ", userphone=" + userphone + ", userquestion=" + userquestion + ", useranswer="
+				+ useranswer + ", userrole=" + userrole + ", usercreatetime=" + usercreatetime + ", userlasttime="
+				+ userlasttime + "]";
+	}   
 }
