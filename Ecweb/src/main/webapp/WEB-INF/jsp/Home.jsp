@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -17,9 +17,22 @@
 <script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
 <script src="js/common_js.js" type="text/javascript"></script>
 <script src="js/footer.js" type="text/javascript"></script>
-<title>网站首页</title>
-</head>
 
+<script type="text/javascript" src="js/juqery-3.2.1.js"></script>
+<title>网站首页</title>
+<script type="text/javascript">
+
+	function jover(){
+		$("#usernamediv").show();
+	};
+		 	
+	function jout(){
+	    $("#usernamediv").hide();
+	})
+}
+  
+</script>
+</head>
 <body>
 <!--顶部样式-->
  <div id="header_top">
@@ -28,7 +41,27 @@
       <div class="Collection">下午好，欢迎光临锦宏颜！<em></em><a href="#">收藏我们</a></div>
 	<div class="hd_top_manu clearfix">
 	  <ul class="clearfix">
-	   <li class="hd_menu_tit zhuce" data-addclass="hd_menu_hover">欢迎光临本店！<a href="#" class="red">[请登录]</a> 新用户<a href="toRegiUser" class="red">[免费注册]</a></li>
+	   <li class="hd_menu_tit zhuce" data-addclass="hd_menu_hover">欢迎光临本店！
+	   <c:if test="${empty sessionScope.user}">
+	   	 <a href="againLogin" class="red">[请登录]</a>
+	   </c:if>
+	   <c:if test="${not empty sessionScope.user}">
+	    <li class="hd_menu_tit phone_c" data-addclass="hd_menu_hover"><a href="#" class="hd_menu "><em class="iconfont icon-shouji"></em>Hi! ${sessionScope.user.username}</a>
+	    <div class="hd_menu_list erweima">
+		   <table style="width: 180px;height: 100px;background-color:black;">
+		   	<tr>
+		   		<td></td>
+		   		<td width="45%" align="right"><a href="toUser">账户管理</a></td>
+		   		<td width="30%" align="right"><a href="againLogin">| 退出  </a></td>
+		   	</tr>
+		   	<tr>
+		   		<td style="height: 60px;" colspan="3"></td>
+		   	</tr>
+		   </table>
+		</div>	   
+	   </li>
+	   </c:if>	   
+	   新用户<a href="toRegiUser" class="red">[免费注册]</a></li>
 	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="#">我的订单</a></li> 
 	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"> <a href="#">购物车</a> </li>
 	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="#">联系我们</a></li>

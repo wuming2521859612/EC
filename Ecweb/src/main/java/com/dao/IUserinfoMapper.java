@@ -34,14 +34,14 @@ public interface IUserinfoMapper {
 	 * @return
 	 */
 	@Select("select * from userinfo where userid=#{userid}")
-	public Userinfo selectByPrimaryKey(Short userid);
+	public Userinfo selectByPrimaryKey(int userid);
 
 	/**
-	 * 查看所有用户
+	 * 查看 登录用户
 	 * @return
 	 */
-    @Select("select * from userinfo")
-    public List<Userinfo> selectAll();
+    @Select("select * from userinfo where username=#{nameOremail} or useremail=#{nameOremail} and userpwd=#{userpwd}")
+    public Userinfo selectuser(String nameOremail,String userpwd);
     
     /**
      * 修改某一个用户
